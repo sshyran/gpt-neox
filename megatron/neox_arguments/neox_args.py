@@ -141,9 +141,9 @@ class NeoXArgsModel(NeoXArgsTemplate):
     T5 relative positional encoding max distance, default 128.
     """
 
-    opt_pos_emb_offset: int = 0
+    opt_pos_emb_offset: int = 1
     """
-    Learned position embedding offset (only used by OPT, where it should be set to 2).
+    Learned position embedding offset. 1 is the standard behavior, but when using OPT it should be set to 2.
     """
 
     no_weight_tying: bool = False
